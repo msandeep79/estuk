@@ -21,6 +21,7 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
+    authorize! :manage, @book
   end
 
   # POST /books
